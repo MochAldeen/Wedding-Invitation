@@ -1,12 +1,12 @@
 import React from 'react';
-import getData from '../data'; // Pastikan data yang digunakan sama
 import { useParams } from 'react-router-dom';
+import getData from '../data'; // Import getData untuk mengambil data tamu
 
 function Hero() {
   const { eventId } = useParams<{ eventId: string }>(); // Mendapatkan eventId dari URL
-  const data = getData();
+  const data = getData(); // Mendapatkan data dari data.js
   
-  // Menemukan tamu berdasarkan id
+  // Menemukan tamu berdasarkan eventId
   const guest = data.tamu.find((tamu) => tamu.id === eventId) || {
     nama: 'Kerabat',
     alamat: 'Di Tempat',
