@@ -1,14 +1,13 @@
 import React from 'react';
-import getData from '../data'; // Mengimpor data tamu
-import { useParams } from 'react-router-dom'; // Mengimpor useParams dari react-router-dom
+import { useParams } from 'react-router-dom';
+import getData from '../data'; // Import data tamu
 
-// Komponen Front
 interface FrontProps {
   onClick: () => void;
 }
 
 const Front: React.FC<FrontProps> = ({ onClick }) => {
-  const { eventId } = useParams(); // Mengambil eventId dari URL
+  const { eventId } = useParams(); // Mendapatkan eventId dari URL
   const data = getData(); // Mendapatkan data acara dan tamu
   
   // Mencari tamu berdasarkan eventId
