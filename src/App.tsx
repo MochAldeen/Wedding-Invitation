@@ -51,7 +51,7 @@ function EventPage() {
   );
 }
 
-const Home = () => (
+const HomePage = () => (
   <div>
     <h1>Welcome to Our Wedding</h1>
     <p>Choose a guest to see the invitation:</p>
