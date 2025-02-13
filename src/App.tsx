@@ -51,4 +51,17 @@ function EventPage() {
   );
 }
 
+const Home = () => (
+  <div>
+    <h1>Welcome to Our Wedding</h1>
+    <p>Choose a guest to see the invitation:</p>
+    <ul>
+      <li><a href="/nabilah">Nabilah</a></li>
+      <li><a href="/johnson">Johnson</a></li>
+      <li><a href="/alice">Alice</a></li>
+    </ul>
+  </div>
+);
+
+
 export default App;
